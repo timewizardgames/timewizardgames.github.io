@@ -1,3 +1,389 @@
+<!DOCTYPE html>
 <html>
-test
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="dark">
+    <section class="section">
+      <!-- Title Card -->
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="has-text-centered">
+              <img class="is-centered pfp" src="images/MegLurkVector-cropped-smaller-pfp.png">
+              <h1 class="title name">megalon</h1>
+              <!-- <p class="subtitle">Game Developer | Artist | Musician</p> -->
+              <p class="subtitle">
+                Game Developer | Artist | Musician<br>
+                <a href="https://twitter.com/megalon2d">
+                  <svg viewBox="0 0 248 204" width="32" height="32">
+                    <path fill="#ffffff" d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+                    C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+                    c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+                    c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+                    c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+                    c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"></path>
+                  </svg>
+                </a>
+                <a href="https://github.com/megalon">
+                  <svg viewBox="0 0 98 96" width="32" height="32">
+                    <path fill="#ffffff" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"></path>
+                  </svg>
+                </a>
+              </p>          
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <!-- Tabs -->
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="tabs is-centered" id="tabs">
+              <ul>
+                <li class="is-active" data-tab="1">
+                  <a>
+                    <span>Software</span>
+                  </a>
+                </li>
+                <li data-tab="2">
+                  <a>
+                    <span>Models</span>
+                  </a>
+                </li>
+                <li data-tab="3">
+                  <a>
+                    <span>Art</span>
+                  </a>
+                </li>
+                <li data-tab="4">
+                  <a>
+                    <span>Music</span>
+                  </a>
+                </li>
+                <li data-tab="5">
+                  <a>
+                    <span>About</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content -->
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <div id="all-tabs-content">
+                <!-- Software -->
+                <div class="tab-content is-active" data-content="1">
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">3D Overlay</h4>
+                    </div>
+                    <video autoplay loop muted width="100%">
+                      <source src="videos/3d-overlay-demo-smaller.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                      This is my 3D livestream overlay that I use on my art streams!
+                    </p>
+                    <p>
+                      It's built in Unity and uses OBS's Game Capture source to remove the transparent background. This allows perfect transparency without using color-keying, and even allows semi-transparency.
+                    </p>
+                    <p>
+                      I made all of the models and textures for this project in Blender and Clip Studio Paint.
+                    </p>
+                    <p>
+                      I also wrote a custom C# library to connect with Clip Studio Paint to get the current tool and color. This data affects the color and tool shown in the overlay!
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Sinister Squeakers from Outer Space</h4>
+                      <hr>
+                    </div>
+                    <div class="video-container">
+                      <div class="sidewall left sinister-squeakers"></div>
+                      <video class="video-to-contain" autoplay loop muted>
+                        <source src="videos/sinister-squeakers.mp4" type="video/mp4">
+                      </video>
+                      <div class="sidewall right sinister-squeakers"></div>
+                    </div>                    
+                    <p>
+                      An arcade style shooter game made for "Mini-Jam 130"! The theme was "Luna" and the limitation was "10 seconds". In our game the moon is made of cheese and every 10 seconds you are attacked by alien mice!
+                    </p>
+                    <p>
+                      This project was made in Unity and was a collaboration with <a href="https://twitter.com/ivanmzart">Ivanmzart</a>!
+                    </p>
+                    <p>
+                      I did the programming, SFX, and music. Ivanmz made the models, textures, animations, and logo! </p>
+                    <p>
+                      <a href="https://megalon.itch.io/sinister-squeakers">itch.io</a>
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Factory Factory</h4>
+                      <hr>
+                    </div>
+                    <video autoplay loop muted width="100%">
+                      <source src="videos/ff-bluebery-pancakes1.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                      Factory Factory is a TV show about a chaotic, interactive, AI generated factory! It takes requests from Twitch chat to generate new content in realtime using ChatGPT and Unity.
+                    </p>
+                    <p>
+                      This project was designed to run 24 / 7, but that proved too expensive, so now it streams live on Twitch 5 days a week!
+                    </p>
+                    <p>
+                      <a href="https://www.twitch.tv/factoryfactory/">Twitch</a>
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Graffiti Walls</h4>
+                      <hr>
+                    </div>
+                    <img src="images/graffiti-walls.jpg">
+                    <p>
+                      Graffiti Walls is a community driven VRChat world that provides the best spray-painting experience in VRChat!
+                    </p>
+                    <p>
+                      This project was a collaboration with my friends <a href="https://www.twitch.tv/hypervirtualextreme">HyperVirtualExtreme</a> and <a href="https://twitter.com/ivanmzart">Ivanmz</a>! I did Udon programming, 3D modeling, sound design, and project management.
+                    </p>
+                    <p>
+                      We sometimes host a "synced instance" where it is possible to see the artwork that has been painted before you joined the world!
+                    </p>
+                    <p>
+                      <a href="https://vrchat.com/home/world/wrld_36bba085-96d3-4f47-9b53-73ad6013d0a3">VRChat Link</a>
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">NASB Moveset Editor</h4>
+                      <hr>
+                    </div>
+                    <img src="images/nasb-moveset-editor.png">
+                    <p>
+                      A graphical moveset editor for Nickelodeon All-Star Brawl.
+                    </p>
+                    <p>
+                      This project allowed the community to view, edit, and export custom movesets for characters in NASB! Built with C# as a custom Unity Editor window, it runs in the Unity Editor.
+                    </p>
+                    <p>
+                      <a href="https://github.com/megalon/nasb-moveset-editor">GitHub</a>
+                    </p>
+                  </div>
+                  
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">NASB Custom Music Mod</h4>
+                      <hr>
+                    </div>
+                    <img src="images/nick-custom-music-mod.png">
+                    <p>
+                      My most popular mod for Nickelodeon All-Star Brawl. This mod allows anyone to load custom music into each stage in the game!
+                    </p>
+                    <p>
+                      This mod was designed to be easy to use, and includes thorough documentation. Built as a BepInEx plugin using C#.
+                    </p>
+                    <p>
+                    <a href="https://github.com/megalon/nick-custom-music-mod">GitHub</a> | <a href="https://nasb.thunderstore.io/package/megalon2d/CustomMusicMod/">Thunderstore.io</a>
+                    </p>
+                  </div>
+                  
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Very Expensive Pizza</h4>
+                      <hr>
+                    </div>
+                    <video autoplay loop muted>
+                      <source src="videos/very-expensive-pizza.mp4" type="video/mp4">
+                    </video>
+                    <p>
+                      A small Unity game I made as a one week challenge project.
+                    </p>
+                    <p>
+                      I wrote all of the code for this project, and made all of the assets in Blender and Clip Studio Paint.
+                    </p>
+                    <p>
+                      <a href="https://megalon.itch.io/very-expensive-pizza">itch.io</a>
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">The Beat Cop</h4>
+                      <hr>
+                    </div>
+                    
+                    <img src="images/the-beat-cop.gif" width="100%">
+                    
+                    <p>
+                      THE BEAT COP (TBC) is a free drum machine made inspired by Teenage Engineering Pocket Operator (PO-12)!
+                    </p>
+                    <p>
+                      The project was built in Pure Data Vanilla, and is fully customizable! It features 16 customizable samples, 16 patterns, 15 different effects, and much more!
+                    </p>
+                    <p>
+                      <a href="https://github.com/megalon/THE_BEAT_COP">GitHub</a>
+                    </p>
+                  </div>
+                  
+                </div>
+
+                <!-- 3D Models -->
+                <div class="tab-content" data-content="2">
+                  
+                  <div class="project">
+                    <img src="images/3d-models/po-12-render-triple.jpg">
+                    <p>
+                      Fanart model of the Teenage Engineering PO-12 made in Blender!
+                    </p>
+                  </div>
+                  
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">VRC Avatars</h4>
+                      <hr>
+                    </div>
+                    <img src="images/3d-models/vrc-model-green.png">
+                    <img src="images/3d-models/vrc-model-meg.png">
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Game Ready Assets</h4>
+                      <hr>
+                    </div>
+                    <img src="images/3d-models/model-rode-nt1.jpg">
+                    <img src="images/3d-models/model-chair.jpg">
+                    <img src="images/3d-models/3d-pen.png">
+                    <img src="images/3d-models/airbrush.jpg">
+                    <img src="images/3d-models/vrc-graffiti-world-assets.PNG">
+                  </div>
+                </div>
+
+                <!-- 2D Art -->
+                <div class="tab-content" data-content="3">
+                  <img src="images/art/DailyDraw-2023-1-23-wattson-cropped.png">
+                  <img src="images/art/DailyDraw-2022-1-9-fish.png">
+                  <img src="images/art/DailyDraw-2022-7-22-character-sheet.png">
+                  <img src="images/art/DailyDraw-2022-6-19-meg-1920.png">
+                </div>
+
+                <!-- Music -->
+                <div class="tab-content" data-content="4">
+                  
+                  <div class="project">
+                    <h4 class="title">Waiting Room at the Frog Store</h4>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1272317797&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/megalon2d" title="Megalon2D" target="_blank" style="color: #cccccc; text-decoration: none;">Megalon2D</a> · <a href="https://soundcloud.com/megalon2d/waiting-room-at-the-frog-store" title="Waiting Room at the Frog Store" target="_blank" style="color: #cccccc; text-decoration: none;">Waiting Room at the Frog Store</a></div>
+                    <p>
+                      A cute ChipTune inspired song I made while experimenting with the 3/4 time signature.
+                    </p>
+                    <p>
+                      My friend <a href="https://twitter.com/ivanmzart">Ivanmz</a> made an incredible animation to go along with it!
+                    </p>
+                    <p>
+                      
+                    <div class="video-container">
+                      <div class="sidewall left frog-store"></div>
+                      <iframe  class="video-to-contain" width="560" height="315" src="https://www.youtube.com/embed/Or-wPI1JyHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <div class="sidewall right frog-store"></div>
+                    </div> 
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Maid Game BGM</h4>
+                      <hr>
+                    </div>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1287518245&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/megalon2d" title="Megalon2D" target="_blank" style="color: #cccccc; text-decoration: none;">Megalon2D</a> · <a href="https://soundcloud.com/megalon2d/maid-game-bgm" title="Maid Game BGM" target="_blank" style="color: #cccccc; text-decoration: none;">Maid Game BGM</a></div>
+                    <p>
+                      <br>This song was created as background music for a short prototype Unity game.
+                      <br>I took heavy inspiraction from breakcore artists like Glitchtrode and Machine Girl.
+                      <br>
+                      <br>Programming and Unity development by <a href="https://www.twitch.tv/hypervirtualextreme">HyperVirtualExtreme</a>!
+                      <br>3D Models and other artwork by <a href="https://twitter.com/ivanmzart">Ivanmz</a>!
+                      <br>
+                      <br>The prototype was never released, but it served as a good challenge and reminder of how much music can influence the style of a project.
+                    </p>
+                  </div>
+
+                  <div class="project">
+                    <div class="title-container">
+                      <h4 class="title">Lofi Backing Track</h4>
+                      <hr>
+                    </div>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1358501506&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/megalon2d" title="Megalon2D" target="_blank" style="color: #cccccc; text-decoration: none;">Megalon2D</a> · <a href="https://soundcloud.com/megalon2d/lofi-backing-track-1" title="Lofi Backing Track 1" target="_blank" style="color: #cccccc; text-decoration: none;">Lofi Backing Track 1</a></div>  
+                    <p>
+                      <br>I made this song to use as background music for YouTube videos and livestreams on Twitch!
+                    </p>
+                  </div>
+                </div>
+
+                <!-- About -->
+                <div class="tab-content" data-content="5">
+                  <div class="project">
+                    <h4 class="title">About Me</h4>
+                    <p>
+                    Hi. I'm megalon.
+                    </p>
+                    <p>
+                      I have 10+ years of programming experience, including 5 years using C# in Unity. In this time I created complex mods for 3 different Unity games: Beat Saber, Nickelodeon All-Star Brawl, and Ooblets. I have also released 2 small Unity projects of my own.
+                    </p>
+                    <p>
+                      In 2018 I created the <a href="https://discord.gg/beatsabermods">Beat Saber Modding Group</a>, a Discord server with 200,000+ members dedicated to modding the VR game Beat Saber. I have collaborated on multiple programming projects through GitHub with other members of the community, including maintaining the Beat Saber mod manager <a href="https://github.com/Assistant/ModAssistant">Mod Assistant</a> with 3 million+ downloads.
+                    </p>
+                    <p>
+                      As you can see from this website, I have a lot of interests. Programming, 3D modeling, digital painting, and music production are all things that I have a passion for. I believe all of these contribute to my skills in Game Development.
+                    </p>
+                    <p>
+                      Contact me at <a href="mailto:megalongaming@gmail.com">megalongaming@gmail.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div style="display: flex; justify-content: center;">
+              <a href="#" class="button is-primary is-fixed" id="back-to-top" title="Go to top">
+                <i class="fas fa-chevron-up"></i> Back to Top
+              </a>  
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+              <p >© Copyright 2023 megalon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
 </html>

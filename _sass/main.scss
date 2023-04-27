@@ -1,0 +1,155 @@
+// Import the initial variables
+@import '../node_modules/bulma/sass/utilities/initial-variables';
+@import '../node_modules/bulma/sass/utilities/functions';
+
+// Set the derived variables
+$primary: #2196f3;
+$secondary: #787a9c;
+$danger: #bb2211;
+$info: #787a9c;
+$link: #48bcff;
+
+// Import the rest of Bulma
+@import '../node_modules/bulma/bulma';
+
+.video-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: "left-sidewall video right-sidewall";
+}
+
+.sidewall {
+  background-color: #2c2c2c;
+}
+
+.sidewall.sinister-squeakers {
+  background-color: #131316;
+}
+
+.sidewall.frog-store {
+  background-color: #0c0f10;
+}
+
+.sidewall.left {
+  grid-area: left-sidewall;
+}
+
+.sidewall.right {
+  grid-area: right-sidewall;
+}
+
+.video-to-contain{
+  grid-area: video;
+  max-height: 80vh;
+  min-height: 20em;
+}
+
+
+h4 {
+  margin-block-start: 1em;
+}
+
+.project p {
+  margin-top: 1em;
+}
+
+.title-container {
+  display: flex;
+  white-space: nowrap;
+}
+
+.title-container hr {
+  flex: 1;
+  margin-top: 2em;
+  margin-bottom: 0;
+  margin-left: 0.66em;
+  margin-right: 0;
+  border-style: none;
+  height: 0.25em;
+  background-color: #555555;
+}
+
+svg {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+img.pfp {
+  border-radius: 100%;
+  width: 6em;
+  margin-bottom: 0.4em;
+}
+
+div .project {
+  margin-bottom: 4em;
+}
+
+#all-tabs-content .tab-content {
+  display: none;
+}
+
+#all-tabs-content .tab-content.is-active {
+  display: block;
+}
+
+body {
+  background-color: $light;
+  color: $dark;
+}
+
+html {
+  background-color: $dark;
+}
+
+body.dark,
+body.dark span,
+body.dark label,
+body.dark strong,
+body.dark em {
+  background-color: $black-ter;
+  color: $light;
+}
+
+body.dark .subtitle,
+body.dark .title {
+  color: $light;
+}
+
+.footer {
+  background-color: $white-bis;
+}
+body.dark .footer {
+  background-color: $black-bis;
+}
+
+body.dark.dark-full .is-primary {
+  color: $primary;
+  background-color: $primary-invert;
+}
+
+body.dark.dark-full .is-info {
+  color: $info;
+  background-color: $info-invert;
+}
+
+body.dark.dark-full .is-link {
+  color: $link;
+  background-color: $link-invert;
+}
+
+body.dark.dark-full .is-danger {
+  color: $danger;
+  background-color: $danger-invert;
+}
+
+body.dark.dark-full .is-warning {
+  color: $warning;
+  background-color: $warning-invert;
+}
+
+body.dark.dark-full .is-success {
+  color: $success;
+  background-color: $success-invert;
+}
